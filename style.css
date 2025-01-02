@@ -13,11 +13,11 @@ body {
 
 header {
   height: 100%;
-  background-image: url("assets/hero3.jpg");
+  background-image: url("assets/123.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  color:rgb(73, 70, 70);
+  color: rgb(73, 70, 70);
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -26,26 +26,65 @@ header {
   padding-bottom: 20vmin;
 }
 
-header h1{
+header h1 {
   font-size: 5vmin;
 }
-header h2{
+header h2 {
   font-size: 3.5vmin;
-
 }
 
 header a {
   text-decoration: none;
-  padding: 1vmin 2vmin;
-  background-color: #ebee2c;
-  color: black;
-  border-radius: 15px;
   cursor: pointer;
-  font-size: 2.5vmin;
+  /* font-size: 2.5vmin; */
 }
-.line{
+.btn{
+  background-color: #ebee2c;
+  border-radius: 30px;
+  padding: 8px 15px;
+  color: rgb(60, 58, 58);
+}
+.line {
   background-color: rgb(60, 58, 58);
   width: 40vmin;
   height: 2px;
+}
 
+.logo {
+  height: 70px;
+}
+
+.nav-bar {
+  position: absolute;
+  display: flex;
+  align-items: center;
+left: 100px;
+  justify-content: space-between;
+  width: 80%;
+  color: white;
+  padding: 20px;
+}
+.nav-bar ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+
+.nav-bar ul li {
+  list-style: none;
+  color: white;
+  font-weight: 800;
+  margin: 30px;
+  cursor: pointer;
+}
+
+.nav-bar ul li.active{
+  color: rgb(245, 121, 121);
+  text-decoration: underline;
+}
+
+.nav-bar ul li.btn{
+color:  rgb(60, 58, 58);;
 }
